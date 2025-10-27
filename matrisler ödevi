@@ -1,0 +1,44 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+       
+        int[,] matris = new int[5, 3];
+        Random rastgele = new Random();
+
+       for (int i = 0; i < 5; i++) 
+        {
+            for (int j = 0; j < 3; j++) 
+            {
+                matris[i, j] = rastgele.Next(1, 10);
+            }
+        }
+
+        Console.WriteLine("Matris:");
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                Console.Write(matris[i, j] + " ");
+            }
+            Console.WriteLine(); 
+        }
+
+       
+        int sutün1Toplamı = 0;
+        int sutün2Toplamı = 0;
+        int sutün3Toplamı = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            sutün1Toplamı += matris[i, 0];
+            sutün2Toplamı += matris[i, 1];
+            sutün3Toplamı += matris[i, 2];
+        }
+         Console.WriteLine();
+        Console.WriteLine("Sütun 1: " + sutün1Toplamı);
+        Console.WriteLine("Sütun 2: " + sutün2Toplamı);
+        Console.WriteLine("Sütun 3: " + sutün3Toplamı);
+    }
+}
