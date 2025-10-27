@@ -1,1 +1,1 @@
-# Algoritma-ve-Programlama-devler
+# BM1003-Algoritma-ve-Programlama-1
